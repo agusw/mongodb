@@ -1,0 +1,27 @@
+<h1>Expense No: <%= @expense.id %></h1>
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>:</td>
+    <td><%= @expense.expense_name %></td>
+  </tr>
+  <tr>
+    <td>Date Spent</td>
+    <td>:</td>
+    <td><%= @expense.date_spent %></td>
+  </tr>
+  <tr>
+    <td>Amount</td>
+    <td>:</td>
+    <td><%= @expense.amount %></td>
+  </tr>
+</table>
+
+ <table>
+  <tr>
+    <td><%= link_to 'Edit', edit_expense_path(@expense) %></td>
+    <td>|</td>
+    <td><%= link_to 'Back', expenses_path %></td>
+  </tr>
+</table>

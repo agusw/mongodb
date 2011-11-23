@@ -1,0 +1,25 @@
+<h1>Edit Article</h1>
+
+<%=form_for @expense do |expense|%>
+<table>
+  <tr>
+    <td>Name</td>
+    <td>:</td>
+    <td><%= expense.text_field :expense_name %></td>
+  </tr>
+  <tr>
+    <td>Date Spent</td>
+    <td>:</td>
+    <td><%= expense.text_field :date_spent %></td>
+  </tr>
+  <tr>
+    <td>Amount</td>
+    <td>:</td>
+    <td><%= expense.text_field :amount %></td>
+  </tr>
+  <tr>
+    <td colspan ="3" align ="center"><%= expense.submit %></td>
+  </tr>
+</table>
+
+<%  end%>
